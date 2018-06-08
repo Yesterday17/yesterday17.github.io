@@ -82,5 +82,4 @@ deploy:
   repo: https://github.com/Yesterday17/yesterday17.github.io
   branch: master
 
-# CNAME
-  cname: www.yesterday17.cn
+cname: www.yesterday17.cn
