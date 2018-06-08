@@ -80,4 +80,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/Yesterday17/yesterday17.github.io
-  branch: gh-pages
+  branch: master
