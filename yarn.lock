@@ -954,6 +954,10 @@ hexo-generator-category@^0.1.3:
     hexo-pagination "0.0.2"
     object-assign "^2.0.0"
 
+hexo-generator-cname3@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/hexo-generator-cname3/-/hexo-generator-cname3-1.0.1.tgz#d437864da2a3b7224655798c96c73df54fab4b46"
+
 hexo-generator-index@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/hexo-generator-index/-/hexo-generator-index-0.2.1.tgz#9042229fcac79aaf700575da19332bf3f7ee5c5d"
