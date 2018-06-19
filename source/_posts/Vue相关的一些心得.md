@@ -39,12 +39,12 @@ tags: Vue
 <!DOCTYPE html>
 <html>
   <head>
-  xxx
+  ...
   </head>
   <body>
-  xxxx
+  ...
   <script type="module">
-  import { xxx } from "xxx";
+  import { part } from "module";
   </script>
   <body>
 </html>
@@ -212,3 +212,10 @@ let branch = new Vue({
 ```
 
 ### 最后的启示
+
+`Vue.js`是我相对比较熟悉的前端框架了。虽然它本身对`Typescript`的支持一般，但这也是我第一个用于工程的前端框架。在高考完咕咕咕以来，我也很久没有碰过专栏助手了。  
+归根结底，前端框架还是给人用的，因此就会产生诸如`v-for`之类的方便的东西。但正因为是人，所以也会有很多玄学的问题。诸如像上面的重名 key 检查报告中，遇到的怎么也不明白的样式错误，最后发现是不小心删了一个`</table>`……
+
+### BGM
+
+{% meting "421160925" "netease" "song" "autoplay" %}

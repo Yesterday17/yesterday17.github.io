@@ -104,3 +104,6 @@ valine:
   verify: false
   avatar: mm
   placeholder: nep?!
+
+aplayer:
+  meting: true
