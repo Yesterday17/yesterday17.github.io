@@ -1,6 +1,0 @@
-[submodule "themes/hexo-theme-apollo"]
-	path = themes/hexo-theme-apollo
-	url = git://github.com/Yesterday17/hexo-theme-apollo.git
-[submodule "themes/apollo"]
-	path = themes/apollo
-	url = git://github.com/Yesterday17/hexo-theme-apollo.git

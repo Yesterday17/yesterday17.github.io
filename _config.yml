@@ -6,8 +6,9 @@
 title: 某昨的迷之小屋
 subtitle:
 description:
-keywords:
-author: Yesteeday17
+keywords: Yesterday17, Node, 技术
+author: Yesteeday17, t@yesterday17.cn
+avatar: /images/icon.jpg
 language: zh
 timezone: Asia/Shanghai
 
@@ -89,3 +90,17 @@ archive_generator:
   daily: false
 
 cname: www.yesterday17.cn
+
+# Social Accounts
+twitter: Yesterday17CN
+github: Yesterday17
+
+# Comment
+valine:
+  enable: true
+  appid: pWV8vwE9S6sljaRCG0oKKVWo-gzGzoHsz
+  appkey:  Kn0K1ReRK841kX6lRjPeGtxh
+  notify: false
+  verify: false
+  avatar: mm
+  placeholder: nep?!
