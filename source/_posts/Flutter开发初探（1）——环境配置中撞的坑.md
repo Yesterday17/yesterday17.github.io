@@ -2,7 +2,8 @@
 layout: _posts
 title: Flutter开发初探（1）——环境配置中撞的坑
 date: 2018-07-02 23:05:35
-tags:
+category: 开发
+tags: flutter
 ---
 
 大家好，好久不见，我是某昨。  
