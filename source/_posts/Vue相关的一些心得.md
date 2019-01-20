@@ -2,6 +2,7 @@
 title: Vue相关的一些心得
 date: 2018-06-19 14:31:07
 tags: Vue
+category: 开发
 ---
 
 最近捣鼓了个[翻译质量检查报告](http://www.cfpa.team/TransQualityControl/)，用到的是[Vue.js](https://cn.vuejs.org/index.html)。虽然 Bilibili 专栏助手用到的也是 Vue，但这么多天过去了，还是比较手生的，于是借这个机会复习了一下 Vue 的基本内容。这次写这篇博客，也是希望自己之后不要忘记一些东西。
@@ -81,9 +82,9 @@ export let branches = [
 
 ```html
 <script type="module">
-  import { formats } from "/json/format.js"
-  import { duplicates } from "/json/duplicate.js"
-  import { branches } from "/json/branch.js"
+  import { formats } from "/json/format.js";
+  import { duplicates } from "/json/duplicate.js";
+  import { branches } from "/json/branch.js";
 </script>
 ```
 
@@ -125,15 +126,15 @@ let branch = new Vue({
 <div class="sub">
   <h2>格式符检查报告</h2>
   <table cellspacing="0" id="format">
-  <tr>
-  <th style="width:3%">编号</th>
-  <th style="width:8%">模组ID</th>
-  <th style="width:10%">key</th>
-  <th>英文文本</th>
-  <th>中文文本</th>
-  <th style="width:8%">Weblate</th>
-  </tr>
-  ...
+    <tr>
+      <th style="width:3%">编号</th>
+      <th style="width:8%">模组ID</th>
+      <th style="width:10%">key</th>
+      <th>英文文本</th>
+      <th>中文文本</th>
+      <th style="width:8%">Weblate</th>
+    </tr>
+    ...
   </table>
 </div>
 ```
@@ -152,24 +153,27 @@ let branch = new Vue({
 <div class="sub">
   <h2>格式符检查报告</h2>
   <table cellspacing="0" id="format">
-  <tr>
-    <th style="width:3%">编号</th>
-    <th style="width:8%">模组ID</th>
-    <th style="width:10%">key</th>
-    <th>英文文本</th>
-    <th>中文文本</th>
-    <th style="width:8%">Weblate</th>
-  </tr>
-  <tr v-for="(format, index) in formats">
-    <td style="width:3%">{{ index + 1 }}</td>
-    <td style="width:8%">{{ format.modid }}</td>
-    <td style="width:10%">{{ format.key }}</td>
-    <td>{{ format.en_us }}</td>
-    <td>{{ format.zh_cn }}</td>
-    <td style="width:8%">
-    <a :href="'https://weblate.sayori.pw/translate/langpack/' + format.modid + '/zh_cn/?q=' + format.key + '&context=on'">[点击进入]</a>
-    </td>
-  </tr>
+    <tr>
+      <th style="width:3%">编号</th>
+      <th style="width:8%">模组ID</th>
+      <th style="width:10%">key</th>
+      <th>英文文本</th>
+      <th>中文文本</th>
+      <th style="width:8%">Weblate</th>
+    </tr>
+    <tr v-for="(format, index) in formats">
+      <td style="width:3%">{{ index + 1 }}</td>
+      <td style="width:8%">{{ format.modid }}</td>
+      <td style="width:10%">{{ format.key }}</td>
+      <td>{{ format.en_us }}</td>
+      <td>{{ format.zh_cn }}</td>
+      <td style="width:8%">
+        <a
+          :href="'https://weblate.sayori.pw/translate/langpack/' + format.modid + '/zh_cn/?q=' + format.key + '&context=on'"
+          >[点击进入]</a
+        >
+      </td>
+    </tr>
   </table>
 </div>
 ```
@@ -193,8 +197,12 @@ let branch = new Vue({
     </tr>
     <template v-for="(value, index) in duplicates">
       <tr>
-        <td style="width:3%" :rowspan="value.items.length 1">{{ index + 1 }}</td>
-        <td style="width:10%" :rowspan="value.items.length 1">{{ value.key }}</td>
+        <td style="width:3%" :rowspan="value.items.length 1">
+          {{ index + 1 }}
+        </td>
+        <td style="width:10%" :rowspan="value.items.length 1">
+          {{ value.key }}
+        </td>
       </tr>
       <template v-for="(v, i) in value.items">
         <tr>
@@ -202,7 +210,10 @@ let branch = new Vue({
           <td>{{ v.en_us }}</td>
           <td>{{ v.zh_cn }}</td>
           <td style="width:8%">
-            <a :href="'https://weblate.sayori.pw/translate/langpack/' + v.mod + '/zh_cn/?q=' + value.key + context=on'">[点击进入]</a>
+            <a
+              :href="'https://weblate.sayori.pw/translate/langpack/' + v.mod + '/zh_cn/?q=' + value.key + context=on'"
+              >[点击进入]</a
+            >
           </td>
         </tr>
       </template>
